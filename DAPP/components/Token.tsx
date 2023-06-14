@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useContract, Web3Button, useAddress, useContractWrite} from "@thirdweb-dev/react";
+import { Web3Button, useAddress} from "@thirdweb-dev/react";
 import { TOKEN_ADDRESS, NFT_ADDRESS } from "../constants/addresses";
 import { ethers } from "ethers";
 import { Container, Input } from "@chakra-ui/react";
