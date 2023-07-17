@@ -42,7 +42,7 @@ contract MyToken is ERC20 {
         _transfer(address(this), msg.sender, amount);
     }
 
-    //Send token to other accounts (send totken to friends, reward when player wins a fight)
+    //Send token to other accounts (send tokens to friends)
     function sendTokens(address from, address receiver, uint256 amount) external {
         require(balanceOf(from) >= amount, "Amount exceeds sender's balance");
         _transfer(from, receiver, amount);
